@@ -3,7 +3,9 @@
 // Write a program to Reverse a number. 
 
 int main() {
+
     int num, remainder, rev=0;
+    
     printf("Enter a number to reverse : ");
     scanf("%d", &num );
 
@@ -12,7 +14,8 @@ int main() {
         rev = rev*10 + remainder ;
         num = num/10;
     }
-    
+
     printf("Reversed number is %d", rev);
+
     return 0 ;
 }
