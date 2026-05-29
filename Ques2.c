@@ -5,7 +5,7 @@
 int main() {
 
     int num, remainder, rev=0;
-    
+
     printf("Enter a number to reverse : ");
     scanf("%d", &num );
 
