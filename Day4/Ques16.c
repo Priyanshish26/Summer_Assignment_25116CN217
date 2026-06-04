@@ -11,14 +11,14 @@ int main(){
      printf("End of range:");
     scanf("%d", &end);
     
-    printArmstrong(start,end); 
+   
+    printArmstrong(start,end);
     return 0;
 }
 
 void printArmstrong(int start, int end){
     int originalnum, num, newnum, rem, count;
-    
-
+    printf("The Armstrong numbers are : ");
 
     for(int i=start; i<=end ;i++){
         originalnum = i;
@@ -32,17 +32,15 @@ void printArmstrong(int start, int end){
        }
        num = i;
 
+       
        while(num != 0){
         rem = num%10;
         newnum = newnum + (int)round(pow(rem, count));
         num /= 10;
        }
-       if(i == 153){
-    printf("For 153: count=%d newnum=%d\n", count, newnum);
-}
-
+      
        if(newnum == originalnum){
-        printf("%d ",originalnum);
+        printf("%d ", originalnum);
        }
        
     }
