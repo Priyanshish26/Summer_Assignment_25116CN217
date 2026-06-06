@@ -11,18 +11,14 @@ countsetbits(num);
 return 0;
 }
 void countsetbits(int num){
-    int rem, i, j, count=0;
-    int binary[32];
-    // decimal into binary 
-   for(i = 0; num != 0; i++){
-        rem = num%2;
-        binary[i]=rem;
-        num = num/2;
-
-        // to count set bits
-    if(binary[i]== 1){
+   
+    int count =0;
+    while(num>0){
+    if(num%2 == 1){
         count++;
+       
     }
+     num/=2;
 }
 
 printf("The count of Set bits of a number is %d", count);
